@@ -1,0 +1,144 @@
+
+  .row{
+    padding-top: 1em;
+  }
+
+  .card-body{
+    padding: 0;
+  }
+  img{
+    min-height: 120px;
+  }
+
+  /* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+
+@media (max-width: 320px) {
+
+  h2{
+    font-size: .8rem;
+  }
+  p{
+    font-size: .6rem;
+  }
+  img{
+    width: 100%;
+    height: 120px;
+  }
+}
+
+
+@media (min-width: 320px) {
+	.panel img{
+		height: 250px;
+		width: 100%;
+	}
+	
+	.panel-title{
+		font-size: 25px;
+	}
+  h2{
+    font-size: .8rem;
+  }
+  p{
+    font-size: .6rem;
+  }
+  img{
+    width: 100%;
+    height: 150px;
+  }
+}
+
+@media (min-width: 575px) {
+	.panel img{
+		height: 300px;
+		width: 100%;
+	}
+	.panel-title{
+		font-size: 30px;
+  }
+  h2{
+    font-size: 1rem;
+  }
+  p{
+    font-size: 0.7rem;
+  }
+  img{
+    width: 100%;
+    height: 150px;
+  }
+	
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 768px) {
+	
+		
+	.panel img{
+		width: 100%;
+		height: 200px;
+	}
+	
+	
+	.panel-title{
+		font-size: 17px;
+	}
+	.panel{
+		height: auto;
+	}
+
+  h2{
+    font-size: 1.5rem;
+  }
+  p{
+    font-size: 1rem;
+  }
+  img{
+    width: 100%;
+    height: 200px;
+  }
+	
+}
+
+@media (min-width: 992px){
+	.panel img{
+		width: 100%;
+		height: 250px;
+  }
+  
+  h2{
+    font-size: 2rem;
+  }
+  p{
+    font-size: 1.2rem;
+  }
+  img{
+    width: 100%;
+    height: 220px;
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+	#myCarousel .item { height: 500px; }
+	.panel img{
+		width: 100%;
+		height: 300px;
+  }
+  
+  h2{
+    font-size: 2.5rem;
+  }
+  p{
+    font-size: 1.2rem;
+  }
+  img{
+    width: 100%;
+    height: 250px;
+  }
+	
+}

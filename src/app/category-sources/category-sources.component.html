@@ -1,0 +1,26 @@
+<div class="container">
+
+  <div class="input-group" style="margin-top: 6rem">
+    <input type="text" class="form-control" placeholder="Search by Category" #input aria-label="Search for...">
+    <span class="input-group-btn">
+      <button (click) = getSources(input.value) class="btn btn-success" type="button">Go!</button>
+    </span>
+  </div>
+
+  <div class="row" *ngIf = "sources">
+    <div class="col-sm-4" *ngFor = "let source of sources">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title">{{source.name}}</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">{{source.description}}</p>
+        </div>
+        <div class="card-footer">
+          <a [routerLink]="['/sources', source.id]" class="btn btn-primary">Top Stories</a>
+        </div>  
+      </div>
+    </div>
+  </div>  
+
+</div> <!--end container-->

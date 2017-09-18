@@ -1,0 +1,51 @@
+<!-- <h1>{{title}}</h1> -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+  <span class="h1" class="navbar-brand mb-0" style="font-size: 2.5rem">{{title}}</span>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/saved-articles">Saved Articles</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" routerLink="/sources">Search By Category</a>
+      </li>
+    </ul>
+    <button type="button" class="btn btn-success">Login</button>
+    <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button> -->
+  </div>
+</nav>
+<!-- <nav>
+  <a routerLink="/home">All Available Sources</a>
+  <a routerLink="/sources">Search By Category</a>
+  <a href="#">View Saved Headlines</a>
+  <button>Login</button>
+</nav>   -->
+
+<router-outlet></router-outlet>
+
+
+<!-- <input type="text" placeholder="Search Source" #inp>
+<button (click) = getInput(inp.value)>Go</button>
+
+<h1>{{inp.value}}</h1>
+
+
+
+
+
+
+<div *ngIf = "articles">
+  <ul >
+    <li *ngFor = "let article of articles">
+      <span>{{article.url}}</span> 
+    </li>
+  </ul> 
+</div> -->
+

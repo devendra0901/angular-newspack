@@ -1,0 +1,46 @@
+<div class="container" style="margin-top: 6rem" >
+  
+  <button (click)="goBack()" type="button" class="btn btn-success">Back</button>
+
+  <div class="row" *ngFor = "let article of articles" >
+    <div class="col col-sm-4  card" id="Image">
+      <div class="card-body">  
+        <img src="{{article.urlToImage}}" style="width: 100%"> 
+      </div>  
+    </div> 
+        
+    <div class="col col-sm-8 card" id="Details">
+      <div class="card-body">
+        <h2 class="card-title">{{article.title}}</h2>
+        <p class="card-text"> {{article.description}} 
+          <a href="{{article.url}}" target="_blank" >(read more)</a>
+        </p> 
+        <div class="card-footer"> 
+          <buttons></buttons> 
+        </div>  
+      </div> <!-- end Details -->
+    </div>
+  </div>  
+    
+</div><!-- end container -->
+
+
+
+<!-- <div class="container" style="margin-top: 60px" >
+
+  <button (click)="goBack()" type="button" class="btn btn-success">Back</button>
+
+  <div class="row" *ngFor = "let article of articles" >
+    <div class="col col-lg-4 col-xs-12 " id="Image">
+      <img src="{{article.urlToImage}}" style="width: 100%"> 
+    </div> 
+       
+    <div class="col col-lg-8 col-xs-12" id="Details">
+      <h2>{{article.title}}</h2>
+      <p> {{article.description}} </p>
+      <a href="{{article.url}}" target="_blank" >(read more)</a>
+      <buttons></buttons> 
+    </div>  end Details 
+  </div>
+
+</div> -->

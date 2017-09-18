@@ -1,0 +1,73 @@
+.row{
+    margin-top: 6rem;
+}
+
+.card{
+    margin: 7px;
+    height: 96%;
+}
+
+ /* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+
+@media (max-width: 574px) {
+    
+      h4{
+        font-size: 1.5rem;
+      }
+      p{
+        font-size: 1rem;
+      }
+    }
+    
+    
+    @media (min-width: 575px) {
+ 
+      h4{
+        font-size: 1.3rem;
+      }
+      p{
+        font-size: 0.8rem;
+      }
+        
+    }
+    
+    /* Landscape phone to portrait tablet */
+    @media (min-width: 768px) {
+        
+    
+      h4{
+        font-size: 1.5rem;
+      }
+      p{
+        font-size: 1rem;
+      }
+        
+    }
+    
+    @media (min-width: 992px){
+
+      
+      h4{
+        font-size: 2rem;
+      }
+      p{
+        font-size: 1.1rem;
+      }
+    }
+    
+    /* Large desktop */
+    @media (min-width: 1200px) {
+    
+      
+      h4{
+        font-size: 2rem;
+      }
+      p{
+        font-size: 1.2rem;
+      }
+  
+    }
