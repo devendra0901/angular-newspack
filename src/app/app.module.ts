@@ -2,8 +2,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppService } from './app.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpModule }    from '@angular/http';
-import { RouterModule }   from '@angular/router';
+import { HttpModule } from '@angular/http';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { AllSourcesComponent } from './all-sources/all-sources.component';

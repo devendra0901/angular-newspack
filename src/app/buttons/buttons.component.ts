@@ -1,9 +1,9 @@
 import { Component} from '@angular/core';
 
 @Component({
-  selector: 'buttons',
+  selector: 'app-buttons',
   templateUrl: './buttons.component.html',
   styleUrls: ['./buttons.component.css']
 })
-export class ButtonsComponent{
+export class ButtonsComponent {
 }

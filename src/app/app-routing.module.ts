@@ -2,7 +2,7 @@ import { SavedArticlesComponent } from './saved-articles/saved-articles.componen
 import { AllSourcesComponent } from './all-sources/all-sources.component';
 import { ArticlesListComponent } from './articles-list/articles-list.component';
 import { CategorySourcesComponent } from './category-sources/category-sources.component';
-import { NgModule }             from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [

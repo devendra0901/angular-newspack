@@ -12,10 +12,4 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'News Aggregator';
-  // search:string='';
-  // articles: Article[];
-  // sources: Sources[];
-  // private errorMessage:any = '';
-  // constructor(private service: AppService) {}
-  
 }

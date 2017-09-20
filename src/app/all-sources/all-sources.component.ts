@@ -7,15 +7,14 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './all-sources.component.html',
   styleUrls: ['./all-sources.component.css']
 })
-export class AllSourcesComponent implements OnInit{
+export class AllSourcesComponent implements OnInit {
 
 
   sources: Sources[];
-  private errorMessage:any = '';
+  private errorMessage: any = '';
   constructor(private service: AppService) { }
 
-  getAllSources(){
-    
+  getAllSources() {
         this.service.getSources()
             .then(
                     sources => this.sources = sources,

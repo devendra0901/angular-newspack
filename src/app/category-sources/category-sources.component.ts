@@ -12,7 +12,7 @@ import { Component } from '@angular/core';
 export class CategorySourcesComponent {
 
   sources: Sources[];
-  private errorMessage:any = '';
+  private errorMessage: any = '';
   constructor(private service: AppService) { }
 
 
@@ -22,6 +22,4 @@ export class CategorySourcesComponent {
                 sources => this.sources = sources,
                 error => this.errorMessage = <any>error  );
   }
-
- 
 }

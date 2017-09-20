@@ -1,8 +1,8 @@
 import { AppService } from './../app.service';
 import { Article } from './../article';
 import { Component, Input, OnInit } from '@angular/core';
-import { ActivatedRoute, Params }   from '@angular/router';
-import { Location }                 from '@angular/common';
+import { ActivatedRoute, Params } from '@angular/router';
+import { Location } from '@angular/common';
 import 'rxjs/add/operator/switchMap';
 
 @Component({
@@ -14,14 +14,13 @@ export class ArticlesListComponent implements OnInit {
 
   articles: Article[];
   selectedArticle: Article;
-  private errorMessage:any = '';
+  private errorMessage: any = '';
 
   constructor(
     private service: AppService,
     private route: ActivatedRoute,
     private location: Location
   ) {}
-  
   // getInput(s:string){
 
   //   this.service.getData(s)
@@ -30,7 +29,7 @@ export class ArticlesListComponent implements OnInit {
   //               error => this.errorMessage = <any>error  );
   // }
 
-  getUrl(article: Article){
+  getUrl(article: Article) {
     return article.url;
   }
 
